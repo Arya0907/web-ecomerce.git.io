@@ -1,0 +1,457 @@
+
+
+*,html{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins";
+    overflow-x: hidden;
+    margin: 0px;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    align-items: center;
+    box-shadow: 0 16px 8px -9px rgba(0, 0, 0, 0.31);
+    position: fixed;
+    margin-top: -40px;
+    z-index: 3;
+    margin: 0 50px;
+    
+}
+
+.logo{
+    display: flex;
+}
+
+.logo p {
+    margin-top: 18px;
+    margin-left: 10px;
+}
+
+.logo img {
+    width: 60px;
+    border-radius: 30px;
+}
+
+.hamburger {
+    display: none;
+}
+
+.nav-bar ul{
+    display: flex;
+    list-style: none;
+}
+
+.nav-bar ul  li a {
+    text-decoration: none;
+    display: block;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    padding: 10px 25px;
+    margin: 0 5px;
+    transition: .2s;
+    text-transform: capitalize;
+}
+
+.nav-bar ul li a::after{
+    display: block;
+    content: "";
+    border-bottom: 3px solid #ffffff;
+    border-radius: 3px;
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+}
+
+.nav-bar ul li a:hover::after{
+    transform: scaleX(1);
+}
+
+.nav-bar ul li a.acrive{
+    color: rgb(54, 54, 53);
+}
+
+.buat-display{
+    display: flex;
+    justify-content: space-between;
+}
+
+.kanan{
+    margin-right: 100px;
+    margin-top: 100px;
+}
+
+.kanan img{
+    border-top-left-radius:100px ;
+    border-bottom-right-radius: 100px;
+    width:500px;
+}
+
+.kiri {
+    margin-top: 100px;
+    margin-left: 100px;
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    letter-spacing: 3px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.kiri a{
+    color: rgb(255, 255, 255);
+    display: block;
+    font-size: 20px;
+}
+
+button{
+    margin-top: 20px;
+    background-color: rgb(0, 0, 0);
+    border: none;
+    padding: 20px 50px;
+    border-radius: 30px;
+    transition: all 0.3s;
+}
+
+.kiri button:hover{
+    background-color: rgb(255, 255, 255);
+    transition: all 0.3s;
+    box-shadow: 0 0 20px black;
+}
+
+.kiri a:hover{
+    color: black;
+}
+
+.img-bawah{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.img-bawah img{
+    height: 300px;
+    width: 300px;
+    border-top-left-radius:200px ;
+    border-top-right-radius:200px ;
+    width: 400px;
+}
+
+img{
+    box-shadow: 0 0 30px black;
+}
+
+span{
+    color:rgb(27, 27, 27);
+}
+
+.wow{
+    color: rgb(255, 255, 0);
+}
+.bagian-service{
+    background-color: rgb(27, 26, 26);
+    height: 580px;
+}
+
+.utama  {
+    padding-top: 50px;
+    text-align: center;
+    margin-bottom: 40px;
+    color: white;
+}
+
+.utama p {
+    font-size: 20px;
+}
+
+.kotak-posisi{
+    display: flex;
+    justify-content: space-around;
+}
+
+.foto {
+    text-align: center;
+    color: white;
+}
+
+.foto h3{
+    margin-top: 20px;
+   font-size: 20px;
+
+}
+
+.foto p {
+    font-size: 20px;
+}
+
+.foto img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+.Product{
+    background-color: rgb(68, 68, 68);
+}
+
+.our{
+    padding-top: 50px;
+    margin-bottom: 50px;
+    color: white;
+}
+
+.our h1 {
+    text-align: center;
+}
+
+.box-card {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 40px;
+    gap: 30px;
+    
+}
+.card {
+    display: flex;
+    /* flex-direction: row; */
+    /* padding: 20px; */
+    flex-direction: column;
+    margin: 20px;
+}
+
+.card img {
+    height: 200px;
+    width: 300px;
+    border-radius: 20px 20px 0px 0px;
+    object-fit: cover;
+}
+
+.card-text {
+    width: 300px;
+    height: 100px;
+    font-size: 20px;
+    border-radius: 0px 0px 20px 20px;
+    background-color: #0b0c0c;
+    /* display: flex; */
+}
+
+.card-text h3 {
+    padding-left: 20px;
+    font-size: 20px;
+    color: white;
+    padding-top: 25px;
+}
+
+
+
+.contact{
+    height: 800px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-box{
+    
+    width: 500px;
+    height: 400px;
+    padding: 30px 20px;
+    margin-top: 200px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.567);
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.353);
+    backdrop-filter: blur(3px);
+    margin-left: 40px;
+}
+
+.input-box h1,::placeholder{
+    color: white;
+    font-family: sans-serif;
+}
+
+.input-box hr {
+    width: 200px;
+}
+
+.input-field{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.input-field input{
+    background: transparent;
+    width: 100%;
+    outline: none;
+    margin-top: 30px;
+    height: 30px;
+    border: none;
+    border-bottom: 1px solid white;
+    color: white;
+}
+
+.input-box button {
+    margin-top: 20px;
+    color: white;
+}
+
+.input-box button:hover{
+    color: black;
+    background-color: white;
+}
+
+.box-contactkanan{
+    width: 400px;
+    border-top-right-radius: 200px;
+    border-top-left-radius: 200px;
+    height: 600px;
+    backdrop-filter: blur(10px);
+    border-bottom-left-radius:20px ;
+    border-bottom-right-radius:20px ;
+    box-shadow: 0 0 30px rgb(0, 0, 0);
+}
+
+.foto-contact{
+    text-align: center;
+    margin-top: 60px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.foto-contact h1 {
+    margin-top: 30px;
+}
+
+.foto-contact h2 {
+    margin-top: 30px;
+}
+
+.foto-contact img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius:100% ;
+    margin-top: 30px;
+}
+
+.posisi-tengah{
+   display: flex;
+   justify-content: center;
+   justify-content: space-around;
+   margin-top: 40px;
+}
+
+.logo-icon{
+    margin-top: 10px;
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    height: 650px;
+}
+
+.isi-container{
+    display: flex;
+    margin-top: 80px;
+    justify-content: space-around;
+    gap: 40px;
+}
+
+.article-container{
+    font-size: 40px;
+    width: 400px;
+    text-align: center;
+}
+
+.isi-container img {
+    width: 400px;
+    height: 500px;
+}
+
+.btn-container{
+    margin-top: 100px;
+}
+
+.btn-container a {
+    background-color: black;
+    text-decoration: none;
+    padding: 15px 40px;
+    color: white;
+}
+
+.card5 {
+    background-color: black;
+    height: 350px;
+    font-size: 25px;
+}
+
+.text-card5 p {
+    color: #274374;
+    font-size: 40px;
+    padding-left: 55px;
+    margin: 10px;
+    padding-top: 40px;
+}
+
+.text-card5 span {
+    color: white;
+}
+
+.text-card5 article {
+    color: white;
+    padding-left: 55px;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+.copy p {
+    color: white;
+    text-align: center;
+    padding-top:    0px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.container img {
+    width: 400px;
+    height: 500px;
+}
+
+.isi {
+    display: flex;
+    color: white;
+    justify-content: space-around;
+}
+
+.isi li {
+    list-style: none;
+}
+
+.isi h3 {
+    padding-top: 40px;
+}
+
+.isi ul {
+    padding-top: 20px;
+}
+
+i {
+    padding-left: 50px;
+}
+
+
+
+
+
+
+
